@@ -1,0 +1,61 @@
+{
+  "name": "react-magento-platform",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.18.0",
+    "core-js": "2.5.7",
+    "express": "^4.16.4",
+    "google-maps-react": "^2.0.2",
+    "gsap": "^2.0.2",
+    "helmet": "^3.15.0",
+    "jest-transform-css": "^2.0.0",
+    "next": "^7.0.2",
+    "next-eslint": "0.0.4",
+    "next-fonts": "^0.17.0",
+    "next-redux-wrapper": "^2.1.0",
+    "next-transpile-modules": "^2.0.0",
+    "prismic-reactjs": "^0.3.2",
+    "react": "^16.8.2",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-core": "^7.0.0-bridge",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^23.6.0",
+    "@babel/plugin-proposal-do-expressions": "7.0.0-rc.1",
+    "babel-plugin-transform-es2015-computed-properties": "^6.24.1",
+    "enzyme": "3.4.3",
+    "eslint": "5.11.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.10.0",
+    "prettier": "^1.8.2",
+    "prop-types": "^15.6.2",
+    "redux-mock-store": "^1.5.3",
+    "targets-webpack-plugin": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "dev": "npm run lint && node server.js",
+    "build": "npm run lint && next build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-rebuild": "jest -u",
+    "format-js": "prettier --jsx-bracket-same-line --single-quote --tab-width 4 --trailing-comma es5 --write '{,!(node_modules|public|build)/**/}*.js'",
+    "lint": "eslint --fix --ext .js pages components"
+  }
+}
