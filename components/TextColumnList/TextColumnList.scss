@@ -1,0 +1,16 @@
+@import "../../static/scss/module";
+
+.text-columns{
+    margin-top: 19px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    margin-bottom: 30px;
+    @include tablets{
+        flex-direction: row;
+        margin-left: 106px;
+        margin-top: 52px;
+    }
+}

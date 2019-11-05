@@ -1,0 +1,47 @@
+@import "../../static/scss/module";
+
+.text-block{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray;
+    margin-right: 24px;
+    @include tablets{
+        margin-right: 0;
+        padding-right: 24px;
+        margin-left: 0;
+        flex-direction: row;
+        padding-left: 104px;
+        padding-bottom: 58px;
+    }
+    color: $black;
+    &__content{
+        padding-top: 7px;
+        width: 607px;
+        max-width: 100%;
+        margin: 0;
+        line-height: 32px;
+        font-size: 16px;
+        @include tablets{
+            padding-top: 0;
+        }
+    }
+    &__heading{
+        padding: 0 0 4px 0;
+        margin: 0;
+        line-height: 1;
+        margin-top: -4px;
+        font-family: $got;
+        font-weight: normal;
+        font-size: 48px;
+        text-transform: uppercase;
+        width: 290px;
+        @include tablets{
+            padding: 8px 0 0 0;
+            margin: 0 134px 0 0px;
+            font-size: 72px;
+            line-height: 71px;
+        }
+    }
+}

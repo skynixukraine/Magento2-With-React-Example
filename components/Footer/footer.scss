@@ -1,0 +1,50 @@
+@import "../../static/scss/module";
+.footer {
+    width: 100%;
+    background-color: $dark;
+    &-items {
+        min-height: 1288px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-card {
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+            transition: .3s;
+            &:nth-child(2) {
+                margin: 24px 0 24px 0;
+            }
+            &:hover {
+                background-color: $darkGray;
+                transition: all 0.3s;
+                z-index: 1;
+                h4, span {
+                    color: $white;
+                }
+                a {
+                    color: $accent;
+                    .arrow {
+                        border-top-color: $accent;
+                        &:before {
+                            transition: all 0.3s;
+                            border-top-color: $darkGray;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include tablets {
+            min-height: 552px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include laptop {
+            min-height: 752px;
+        }
+    }
+}

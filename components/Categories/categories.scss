@@ -1,0 +1,67 @@
+@import "../../static/scss/module";
+
+.categories{
+    &__title{
+        text-align: center;
+        color: $black;
+        font-size: $title;
+
+        @include tablets{
+            margin-top: 0;
+            font-size: $titleTablet;
+        }
+    }
+
+    &__items{
+        width: 100%;
+        max-width: 1266px;
+        display: flex;
+        flex-wrap: wrap;
+        @include tablets{
+            width: calc(100% + 26px);
+            justify-content: center;
+        }
+    }
+    &__item{
+        height: 176px;
+        width: 148px;
+        max-width: 100%;
+        overflow: hidden;
+
+        @include tablets{
+            width: 290px;
+            height: 280px;
+            margin-right: 8px;
+        }
+        @include laptop{
+            margin-right: 26px;
+            margin-left: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+        &--top{
+            height: 81.66px;
+            width: 100%;
+            @include tablets{
+                height: 160px;
+            }
+        }
+        &--bot{
+            text-transform: uppercase;
+            background-color: $dark;
+            color: $white;
+        }
+        &--name{
+            font-family: $got;
+            font-weight: normal;
+            line-height: normal;
+            @include tablets{
+                font-size: 24px;
+                padding-bottom: 4px;
+            }
+        }
+
+    }
+}
