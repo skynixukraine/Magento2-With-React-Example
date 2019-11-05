@@ -1,0 +1,39 @@
+.arrow {
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: $dark;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: flex;
+  transition: .3s;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: $white;
+    display: inline-block;
+    transform: translate(-6px, -9px);
+    transition: .3s;
+  }
+
+  &--right {
+    transform: rotate(-90deg);
+    margin-right: -20%;
+  }
+
+  &--left {
+    transform: rotate(90deg);
+    margin-left: -20%;
+  }
+
+  &--hover-accent{
+    &:hover, &:active{
+      border-top-color: $accent;
+    }
+  }
+}

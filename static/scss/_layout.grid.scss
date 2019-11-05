@@ -1,0 +1,19 @@
+.layout-grid {
+    display: flex;
+    flex-direction: row;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+
+    &--header {
+        justify-content: space-between;
+    }
+
+    &--card-view {
+        flex-wrap: wrap;
+        margin-top: 2px;
+        justify-content: left;
+    }
+}

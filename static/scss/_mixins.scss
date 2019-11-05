@@ -1,0 +1,49 @@
+/* breakpoints */
+@mixin desktop {
+  @media (min-width: 1366px) {
+    @content
+  }
+}
+@mixin laptop {
+  @media (min-width: 1024px) {
+    @content
+  }
+}
+@mixin tablets {
+  @media (min-width: 768px) {
+    @content
+  }
+}
+@mixin phones {
+  @media (min-width: 544px) {
+    @content
+  }
+}
+
+@mixin largeLaptop {
+  @media (min-width: 1271px) {
+    @content
+  }
+}
+
+@mixin netbook {
+  @media (min-width: 955px) {
+    @content
+  }
+}
+
+@mixin madiumPhone {
+  @media (min-width: 475px) {
+    @content
+  }
+}
+@mixin mediumTabled {
+  @media (min-width: 631px) {
+    @content
+  }
+}
+
+@mixin smooth{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}

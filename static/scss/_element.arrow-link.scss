@@ -1,0 +1,41 @@
+.arrow-link{
+  cursor: pointer;
+  transition: .3s;
+  font-family: $proximaBold;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+  &__text{
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    margin-right: 16px;
+    max-width: calc(100% - 16px);
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--offset{
+      &-big{
+        max-width: calc(100% - 56px);
+        margin-right: 56px;
+      }
+      &-sm-desk{
+        max-width: calc(100% - 12px);
+        margin-right: 12px;
+      }
+    }
+  }
+
+
+  &:hover{
+    color: $accent;
+
+    .arrow-link__arrow{
+      border-top-color: $accent;
+    }
+  }
+}
